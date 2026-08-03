@@ -14,12 +14,12 @@ class Solution {
         for(int i = k; i < s.length(); i++){
             char inCh = s.charAt(i);
             if(inCh == 'a' || inCh == 'e' || inCh == 'i' || inCh == 'o' || inCh == 'u'){
-                s.charAt(i);
+                
                 count++;
             }
             char outCh = s.charAt(i - k);
             if(outCh == 'a' || outCh == 'e' || outCh == 'i' || outCh == 'o' || outCh == 'u'){
-                s.charAt(i - k);
+                
                 count--;
             }
             maxcount = Math.max(maxcount, count);
