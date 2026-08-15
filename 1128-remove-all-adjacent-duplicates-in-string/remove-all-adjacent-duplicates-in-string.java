@@ -15,8 +15,8 @@ class Solution {
         }
         StringBuilder res = new StringBuilder();
 
-        for(char ch : st) {
-            res.append(ch);
+        for(int i = 0; i < st.size(); i++) {
+            res.append(st.get(i));
         }
 
         return res.toString();
