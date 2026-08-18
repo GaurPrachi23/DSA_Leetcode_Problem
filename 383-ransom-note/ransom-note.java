@@ -4,10 +4,12 @@ class Solution {
         HashMap<Character, Integer> need = new HashMap<>();
 
         for(int i = 0; i < ransomNote.length(); i++){
-            have.put(ransomNote.charAt(i), have.getOrDefault(ransomNote.charAt(i), 0)+ 1);
+            char ch = ransomNote.charAt(i);
+            have.put(ch, have.getOrDefault(ch, 0)+ 1);
         }
         for(int i = 0; i < magazine.length(); i++){
-            need.put(magazine.charAt(i), need.getOrDefault(magazine.charAt(i), 0)+ 1);
+            char ch = magazine.charAt(i);
+            need.put(ch, need.getOrDefault(ch, 0)+ 1);
         }
         for(char ch : have.keySet()){
             int countInNote = have.get(ch);
