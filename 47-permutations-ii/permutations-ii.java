@@ -9,7 +9,7 @@ class Solution {
         return result;
 
     }
-    public void generate(int[] nums, boolean[] used, List<Integer> list, List<List<Integer>> result){
+    private void generate(int[] nums, boolean[] used, List<Integer> list, List<List<Integer>> result){
         if(list.size() == nums.length){
             result.add(new ArrayList(list));
             return;
