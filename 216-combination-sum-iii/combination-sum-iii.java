@@ -9,10 +9,10 @@ class Solution {
         if(remaining < 0){
             return;
         }
-        if(current.size() == k ){
-            if(remaining == 0){
+        if(current.size() == k && remaining == 0){
+            //if(remaining == 0){
             result.add(new ArrayList<>(current));
-            }
+            //}
             return;
         }
         for(int i = start; i <= 9; i++){
