@@ -1,9 +1,10 @@
 class Solution {
     public int[][] floodFill(int[][] image, int sr, int sc, int color) {
         int iniColor = image[sr][sc];
-        if(iniColor != color){
-            dfs(image, sr, sc, iniColor, color);
+        if(iniColor == color){
+            return image;
         }
+        dfs(image, sr, sc, iniColor, color);
         return image;
     }
     public void dfs(int[][] image, int x, int y, int iniColor, int color){
